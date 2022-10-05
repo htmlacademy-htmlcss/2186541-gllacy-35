@@ -62,8 +62,8 @@
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="visually-hidden">Фильтры</h2>
-          <select class="select-control">
-            <option class="">Сортировка:</option>
+          <label for="id_select">Сортировка:</label>
+          <select class="select-control" id="id_select">
             <option value="popular">по популярности</option>
             <option value="cheap">по цене</option>
             <option value="expensive">по алфавиту</option>
@@ -130,6 +130,7 @@
           <button class="button" type="submit">Применить</button>
         </form>
 
+        <h2 class="visually-hidden">Каталог мороженого</h2>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -310,13 +311,13 @@
       <section class="footer-social-media">
         <ul class="footer-social-media-list">
           <li class="footer-social-media-item">
-              <a class="Telegram" href="https://t.me/htmlacademy"></a>
+            <a class="Telegram" href="https://t.me/htmlacademy"></a>
           </li>
           <li class="footer-social-media-item">
             <a class="VK" href="https://vk.com/htmlacademy"></a>
           </li>
           <li class="footer-social-media-item">
-              <a class="Youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+            <a class="Youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
           </li>
         </ul>
       </section>
