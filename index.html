@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -24,16 +25,16 @@
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Телефон</span></a>
+            <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          <li class="navigation-search">
+            <a class="navigation-link" href="#"></a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Вход в личный кабинет</span></a>
+          <li class="navigation-login">
+            <a class="navigation-link" href="#">Вход</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span></a>
+          <li class="navigation-cart">
+            <a class="navigation-link" href="#">2 товара</a>
           </li>
         </ul>
       </nav>
@@ -43,11 +44,11 @@
       <section class="banner">
         <h1 class="visually-hidden">Магазин мороженого Gllacy shop</h1>
         <div>
-          <h2>Нежный пломбир с клубничным джемом
+          <h2 class="slider-title">Нежный пломбир с клубничным джемом
           </h2>
-          <p class="text">Натуральное мороженое из свежих сливок
+          <p class="slider-title-text">Натуральное мороженое из свежих сливок
             и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-          <button class="button-white">Заказать</button>
+          <button class="button button-white">Заказать</button>
         </div>
         <div class="slider">
           <h2 class="visually-hidden">Вкусы мороженого</h2>
@@ -92,17 +93,17 @@
       <section class="presents">
         <h2 class="call-to-action">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="present-item">
-        <li class="present-1">
-          <h3 class="present-1-title">Малинка даром!</h3>
-          <p class="text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья
+        <li class="present">
+          <h3 class="present-title">Малинка даром!</h3>
+          <p class="present-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья
             бесплатно.</p>
-          <button class="button-white">Хочу подарок</button>
+          <button class="button button-white">Хочу подарок</button>
           <img class="present-1-img" src="images/present-1.png" width="219" height="268" alt="Малина в рожке.">
         </li>
-        <li class="present-2">
-          <h3 class="present-2-title">Маршмеллоу даром!</h3>
-          <p class="text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-          <button class="button-white">Хочу подарок</button>
+        <li class="present">
+          <h3 class="present-title">Маршмеллоу даром!</h3>
+          <p class="present-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+          <button class="button button-white">Хочу подарок</button>
           <img class="present-2-img" src="images/present-2.png" width="219" height="268" alt="Маршмеллоу в рожке.">
         </li>
         </ul>
@@ -120,7 +121,7 @@
             </a>
             <b class="product-card-price">310 ₽/кг</b>
             <button class="catalog-mini-button" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
+
             </button>
           </li>
           <li class="product-card">
@@ -131,7 +132,7 @@
             </a>
             <b class="product-card-price">340 ₽/кг</b>
             <button class="catalog-mini-button" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
+
             </button>
           </li>
           <li class="product-card">
@@ -143,7 +144,7 @@
             </a>
             <b class="product-card-price">330 ₽/кг</b>
             <button class="catalog-mini-button" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
+
             </button>
           </li>
           <li class="product-card">
@@ -155,7 +156,7 @@
             </a>
             <b class="product-card-price">320 ₽/кг</b>
             <button class="catalog-mini-button" type="button">
-              <span class="visually-hidden">Добавить в корзину</span>
+
             </button>
           </li>
         </ul>
@@ -191,22 +192,22 @@
 
       <article class="news">
         <p class="news-text">Новое в нашем блоге</p>
-        <h3 class="news-title">10 способов сервировки фруктовых щербетов к столу</h3>
+        <h3 class="present-title">10 способов сервировки фруктовых щербетов к столу</h3>
       </article>
       <article class="email">
-        <p class="news-text">Подпишитесь на нашу сладкую рассылку и будьте всегда
+        <p class="news-text-body">Подпишитесь на нашу сладкую рассылку и будьте всегда
           в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
           Честно =)</p>
         <h3 class="visually-hidden">Подпишитесь на нашу рассылку</h3>
         <form class="email-form" action="#" method="post">
           <input type="email" placeholder="email@example.com">
-          <button class="button-pink" type="submit">Отправить</button>
+          <button class="button button-pink" type="submit">Отправить</button>
         </form>
       </article>
 
 
       <section class="order">
-        <h2 class="order-title">Доставка любимого мороженого на дом</h2>
+        <h2 class="h2.call-to-action">Доставка любимого мороженого на дом</h2>
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на
           дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         <form class="order-form" action="#" method="post">
@@ -216,31 +217,36 @@
           </div>
 
           <div class="order-form-phone">
-            <label for="order-phone">
+            <label class="form-label" for="order-phone">
               Телефон
             </label>
             <input type="text" id="order-phone" name="order-phone" placeholder="+7 800 999-00-00">
           </div>
           <div class="order-form-adress">
-            <label for="order-adress">
+            <label class="form-label" for="order-adress">
               Адрес
             </label>
             <input type="text" id="order-adress" name="order-adress" placeholder="ул. Большая Конюшенная, 19/8">
           </div>
 
-          <button class="button-pink" type="submit">Отправить</button>
+          <button class="button button-pink" type="submit">Отправить</button>
         </form>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
+
         <h3 class="contacts-subtitle">Адрес главного офиса и офлайн-магазина:</h3>
         <address class="contacts-address">
           <b class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</b>
+          <br>
           <a class="contacts-phone-text">Для заказов по телефону:</a>
-          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <br>
+          <a class="contacts-address-tel" href="tel:+78005558628">+7 800 555-86-28</a>
+          <br>
           <a class="contacts-phone-time">(с 10 до 20 ежедневно)</a>
         </address>
-        <a class="button" href="#">Форма обратной связи</a>
+        <a class="contacts-form" href="#">Форма обратной связи</a>
+
       </section>
     </main>
     <footer class="page-footer">
