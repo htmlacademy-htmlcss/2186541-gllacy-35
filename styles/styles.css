@@ -136,8 +136,30 @@ li {
   text-align: center;
 }
 
+.slider-social-media{
+display:flex;
+}
+
 .telegram {
   background: url("../images/telegram-logo.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  border-radius: 27px;
+  background-color: #FCFCFC;
+}
+
+.vk {
+  background: url("../images/vk-logo.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  border-radius: 27px;
+  background-color: #FCFCFC;
+}
+
+.youtube {
+  background: url("../images/youtube-logo.svg") no-repeat center;
   width: 24px;
   height: 24px;
   background-position: center;
