@@ -10,7 +10,8 @@
 
   <body>
     <header class="page-header">
-      <img class="page-header-logo" src="images/logo-main.svg" width="137" height="56" alt="Логотип магазина мороженого Gllacy shop.">
+      <img class="page-header-logo" src="images/logo-main.svg" width="137" height="56"
+        alt="Логотип магазина мороженого Gllacy shop.">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -50,73 +51,87 @@
           <p class="slider-title-text">Натуральное мороженое из свежих сливок
             и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
           <button class="button button-white">Заказать</button>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
         </div>
         <div class="slider">
           <h2 class="visually-hidden">Вкусы мороженого</h2>
+
+          <img class="slider-image" src="images/slider-1.png" width="306" height="507" alt="Примеры мороженого.">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее мороженое</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее мороженое</span>
+          </button>
+          <ul class="slider-social-media">
+            <li class="slider-social-media-item">
+              <a class="telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="slider-social-media-item">
+              <a class="vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+            <li class="slider-social-media-item">
+              <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <img class="slider-image" src="images/slider-1.png" width="306" height="507" alt="Примеры мороженого.">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее мороженое</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее мороженое</span>
-        </button>
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-        </ol>
-        <ul class="slider-social-media">
-          <li class="slider-social-media-item">
-            <a class="Telegram" href="https://t.me/htmlacademy"></a>
-          </li>
-          <li class="slider-social-media-item">
-            <a class="VK" href="https://vk.com/htmlacademy"></a>
-          </li>
-          <li class="slider-social-media-item">
-            <a class="Youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-          </li>
-        </ul>
       </section>
 
       <section class="presents">
-        <h2 class="call-to-action">Заказывайте мороженое и получайте подарки!</h2>
+        <h2 class="call-to-action-present">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="present-item">
-        <li class="present">
-          <h3 class="present-title">Малинка даром!</h3>
-          <p class="present-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья
-            бесплатно.</p>
-          <button class="button button-white">Хочу подарок</button>
-          <img class="present-1-img" src="images/present-1.png" width="219" height="268" alt="Малина в рожке.">
-        </li>
-        <li class="present">
-          <h3 class="present-title">Маршмеллоу даром!</h3>
-          <p class="present-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-          <button class="button button-white">Хочу подарок</button>
-          <img class="present-2-img" src="images/present-2.png" width="219" height="268" alt="Маршмеллоу в рожке.">
-        </li>
+          <li class="present-1">
+            <div class="present-1-text">
+              <h3 class="present-title">Малинка даром!</h3>
+              <p class="present-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового
+                варенья
+                бесплатно.</p>
+              <button class="button button-white">Хочу подарок</button>
+            </div>
+            <img class="present-1-img" src="images/present-1.png" width="219" height="268" alt="Малина в рожке.">
+          </li>
+          <li class="present-2">
+            <div class="present-2-text">
+              <h3 class="present-title">Маршмеллоу даром!</h3>
+              <p class="present-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно
+                бесплатно.</p>
+              <button class="button button-white">Хочу подарок</button>
+            </div>
+            <img class="present-2-img" src="images/present-2.png" width="219" height="268" alt="Маршмеллоу в рожке.">
+          </li>
         </ul>
       </section>
 
 
       <section class="catalog-mini">
-        <h2 class="call-to-action">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <h2 class="call-to-action-try">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/raspberry.png" width="270" height="184" alt="Малиновое мороженое.">
+              <img class="product-card-image" src="images/raspberry.png" width="270" height="184"
+                alt="Малиновое мороженое.">
               <h3 class="product-card-title">Малинка</h3>
               <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
             </a>
@@ -127,7 +142,8 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/pistaccio.png" width="270" height="184" alt="Фисташковый пломбир.">
+              <img class="product-card-image" src="images/pistaccio.png" width="270" height="184"
+                alt="Фисташковый пломбир.">
               <h3 class="product-card-title">Фисташка</h3>
               <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
             </a>
@@ -138,7 +154,8 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/blueberry.png" width="270" height="184" alt="Черничное мороженое.">
+              <img class="product-card-image" src="images/blueberry.png" width="270" height="184"
+                alt="Черничное мороженое.">
               <h3 class="product-card-title">Черника</h3>
               <p class="product-card-description">Крем-брюле
                 с черничным джемом</p>
@@ -150,7 +167,8 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/bubble-gum.png" width="270" height="184" alt="Бабл-гам мороженое.">
+              <img class="product-card-image" src="images/bubble-gum.png" width="270" height="184"
+                alt="Бабл-гам мороженое.">
               <h3 class="product-card-title">Бабл-гам</h3>
               <p class="product-card-description">Ванильный пломбир
                 со сладкой посыпкой</p>
@@ -191,25 +209,28 @@
         </ul>
       </section>
 
-      <article class="news">
-        <p class="news-text">Новое в нашем блоге</p>
-        <h3 class="present-title">10 способов сервировки фруктовых щербетов к столу</h3>
-      </article>
-      <article class="email">
-        <p class="news-text-body">Подпишитесь на нашу сладкую рассылку и будьте всегда
-          в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
-          Честно =)</p>
-        <h3 class="visually-hidden">Подпишитесь на нашу рассылку</h3>
-        <form class="email-form" action="#" method="post">
-          <input type="email" placeholder="email@example.com">
-          <button class="button button-pink" type="submit">Отправить</button>
-        </form>
-      </article>
+      <section class="news-section">
+        <article class="news">
+          <p class="news-text">Новое в нашем блоге</p>
+          <h3 class="present-title">10 способов сервировки фруктовых щербетов к столу</h3>
+        </article>
+        <article class="email">
+          <p class="news-text-body">Подпишитесь на нашу сладкую рассылку и будьте всегда
+            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
+            Честно =)</p>
+          <h3 class="visually-hidden">Подпишитесь на нашу рассылку</h3>
+          <form class="email-form" action="#" method="post">
+            <input type="email" placeholder="email@example.com">
+            <button class="button button-pink" type="submit">Отправить</button>
+          </form>
+        </article>
+      </section>
 
 
       <section class="order">
-        <h2 class="h2.call-to-action">Доставка любимого мороженого на дом</h2>
-        <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на
+        <h2 class="call-to-action-order">Доставка любимого мороженого на дом</h2>
+        <p class="order-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
+          доставку мороженого на
           дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         <form class="order-form" action="#" method="post">
           <div class="order-form-date">
@@ -253,14 +274,20 @@
     <footer class="page-footer">
       <section class="footer-social-media">
         <ul class="footer-social-media-list">
-          <li class="footer-social-media-item">
-            <a class="Telegram" href="https://t.me/htmlacademy"></a>
+          <li class="slider-social-media-item">
+            <a class="telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
           </li>
-          <li class="footer-social-media-item">
-            <a class="VK" href="https://vk.com/htmlacademy"></a>
+          <li class="slider-social-media-item">
+            <a class="vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">VK</span>
+            </a>
           </li>
-          <li class="footer-social-media-item">
-            <a class="Youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          <li class="slider-social-media-item">
+            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -273,7 +300,8 @@
         </ul>
       </section>
       <section class="footer-creator">
-        <img class="footer-creator-logo" src="images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML academy.">
+        <img class="footer-creator-logo" src="images/logo-htmlacademy.svg" width="93" height="27"
+          alt="Логотип HTML academy.">
         <p class="footer-creator-name">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
             academy</a> © 2021</p>
 
