@@ -22,6 +22,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #FEAFC3;
   font-family: Inter, Arial, sans-serif;
@@ -30,6 +34,10 @@ body {
   font-weight: 400;
   color: #565C66;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
 }
 
 li {
@@ -53,12 +61,13 @@ li {
 .page-header {
   display: flex;
   width: 1170px;
-  height: 104px;
-  margin: 0 98px;
+  margin: 0 auto;
 }
 
 .page-header-logo {
   padding: 24px 0;
+  margin: 0;
+
 }
 
 .navigation-item {
@@ -68,10 +77,26 @@ li {
 
 .navigation {
   align-items: center;
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .navigation-list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  width: 422px;
+  justify-content:space-between;
+}
+
+.navigation-user {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 431px;
+  margin-left: auto;
+  justify-content:space-between;
 }
 
 .navigation-search {
@@ -81,6 +106,7 @@ li {
   background-position: center;
   border-radius: 27px;
   background-color: rgba(252, 252, 252, 0.3);
+
 }
 
 .navigation-login {
@@ -109,12 +135,24 @@ li {
   text-decoration: none;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+
 /*SLIDER BLOCK*/
 .banner {
   display: flex;
 }
 
 .slider-title {
+  margin: 0;
+  padding: 0;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
@@ -137,8 +175,10 @@ li {
   text-align: center;
 }
 
-.slider-social-media{
-display:flex;
+.slider-social-media {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .telegram {
@@ -172,6 +212,8 @@ display:flex;
 
 .call-to-action-present,
 .call-to-action-try {
+  margin: 0 auto;
+  padding: 0;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -182,6 +224,8 @@ display:flex;
 }
 
 .call-to-action-present {
+  margin: 0 auto;
+  padding: 0;
   width: 434px;
   height: 92px;
 }
@@ -189,6 +233,8 @@ display:flex;
 .present-item {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .present-title {
@@ -213,6 +259,8 @@ display:flex;
   width: 570px;
   height: 268px;
   border-radius: 16px;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -241,6 +289,7 @@ display:flex;
 
 .news-section {
   display: flex;
+  justify-content: space-between;
 }
 
 .news {
@@ -337,6 +386,15 @@ display:flex;
 }
 
 /*ORDER*/
+
+.order {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+
+}
+
 .call-to-action-order {
   width: 356px;
   height: 92px;
@@ -351,6 +409,12 @@ display:flex;
   height: 88px;
 }
 
+.order-form {
+  width: 500px;
+  height: 406px;
+  background: #FCFCFC;
+  border-radius: 8px;
+}
 
 /*Адрес и контакты*/
 .contacts {
@@ -360,6 +424,15 @@ display:flex;
   background-size: cover;
   border-radius: 16px;
   background-color: aliceblue;
+}
+
+.contacts-right{
+  width: 343px;
+  height: 364px;
+  background: #FCFCFC;
+  border-radius: 8px;
+  margin: 64px;
+  margin-right: 763px;
 }
 
 .contacts-address-tel {
@@ -380,6 +453,33 @@ display:flex;
   text-align: center;
 }
 
+
+/*FOOTER*/
+
+.page-footer-container{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-social-media{
+  width: 104px;
+  display: flex;
+  justify-content:space-between;
+  margin-right: 299px;
+}
+
+.footer-info{
+  width: 356px;
+  margin-right: 200px;
+}
+
+.footer-info-list{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 .footer-info a {
   text-decoration: none;
   color: #2D3440;
@@ -391,6 +491,10 @@ display:flex;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
+}
+
+.footer-creator{
+  width: 193px;
 }
 
 .footer-creator-name {
