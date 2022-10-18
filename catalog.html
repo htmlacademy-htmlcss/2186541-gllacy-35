@@ -8,7 +8,6 @@
   </head>
 
   <body>
-
     <header class="page-header">
       <img class="page-header-logo" src="images/logo-main.svg" width="137" height="56"
         alt="Логотип магазина мороженого Gllacy shop.">
@@ -43,8 +42,8 @@
     </header>
 
 
-    <main class="main-inner">
-      <section>
+    <main class="main-inner main-index">
+      <div class="page-container">
         <header class="inner-header">
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -64,13 +63,14 @@
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="visually-hidden">Фильтры</h2>
-          <label for="id_select">Сортировка:</label>
-          <select class="select-control" id="id_select">
-            <option value="popular">по популярности</option>
-            <option value="cheap">по цене</option>
-            <option value="expensive">по алфавиту</option>
-          </select>
-
+          <div class="sort">
+            <label for="id_select">Сортировка:</label>
+            <select class="select-control" id="id_select">
+              <option value="popular">по популярности</option>
+              <option value="cheap">по цене</option>
+              <option value="expensive">по алфавиту</option>
+            </select>
+          </div>
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
@@ -284,76 +284,71 @@
         </ul>
 
 
+        <div class="catalog-bottom">
+          <button class="button pagination-show-more" type="button">Показать ещё</button>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
-          </li>
-        </ul>
-        <button class="button pagination-show-more" type="button">Показать ещё</button>
-
-      </section>
-
+      </div>
     </main>
 
     <footer class="page-footer">
-      <section class="footer-social-media">
-        <ul class="slider-social-media">
-          <li class="slider-social-media-item">
-            <a class="telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-          <li class="slider-social-media-item">
-            <a class="vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">VK</span>
-            </a>
-          </li>
-          <li class="slider-social-media-item">
-            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-info">
-        <ul class="footer-info-list">
-          <li class="footer-info-item"><a href="#">Для поставщиков</a></li>
-          <li class="footer-info-item"><a href="#">О производстве</a></li>
-          <li class="footer-info-item"><a href="#">Наши документы</a></li>
-          <li class="footer-info-item"><a href="#">Экологические стандарты</a></li>
-        </ul>
-      </section>
-      <section class="footer-creator">
-        <img class="footer-creator-logo" src="images/logo-htmlacademy.svg" width="93" height="27"
-          alt="Логотип HTML academy.">
-        <p class="footer-creator-name">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
-            academy</a> © 2021</p>
+      <div class="page-footer-container">
+        <section class="footer-social-media">
+          <ul class="footer-social-media-list">
+            <li class="slider-social-media-telegram">
+              <a class="social-media-link" href="https://t.me/htmlacademy"></a>
+            </li>
+            <li class="slider-social-media-vk">
+              <a class="social-media-link" href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li class="slider-social-media-youtube">
+              <a class="social-media-link" href="https://www.youtube.com/user/htmlacademyru"></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-info">
+          <ul class="footer-info-list">
+            <li class="footer-info-item"><a href="#">Для поставщиков</a></li>
+            <li class="footer-info-item"><a href="#">О производстве</a></li>
+            <li class="footer-info-item"><a href="#">Наши документы</a></li>
+            <li class="footer-info-item"><a href="#">Экологические стандарты</a></li>
+          </ul>
+        </section>
+        <section class="footer-creator">
+          <img class="footer-creator-logo" src="images/logo-htmlacademy.svg" width="93" height="27"
+            alt="Логотип HTML academy.">
+          <p class="footer-creator-name">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
+              academy</a> © 2021</p>
 
-      </section>
+        </section>
+      </div>
     </footer>
 
   </body>

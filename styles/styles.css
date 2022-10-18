@@ -87,7 +87,7 @@ li {
   margin: 0;
   padding: 0;
   width: 422px;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .navigation-user {
@@ -96,7 +96,7 @@ li {
   padding: 0;
   width: 431px;
   margin-left: auto;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .navigation-search {
@@ -159,7 +159,7 @@ li {
   color: #2D3440;
   width: 470px;
   height: 92px;
-
+  margin-left: 70px;
 }
 
 .slider-title-text {
@@ -168,18 +168,75 @@ li {
   color: #2D3440;
   width: 429px;
   height: 72px;
+  margin-left: 70px;
+}
 
+.button-slider {
+  margin-left: 70px;
 }
 
 .product-list {
   text-align: center;
 }
 
+.slider-bottom {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1170px;
+  justify-content: space-between;
+}
+
 .slider-social-media {
   display: flex;
   margin: 0;
   padding: 0;
+  width: 104px;
+  justify-content: space-between;
 }
+
+.slider-pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 52px;
+  justify-content: space-between;
+}
+
+.slider-social-media-telegram {
+  background: url("../images/telegram-logo.svg") no-repeat center;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  border-radius: 27px;
+
+}
+
+.slider-social-media-vk {
+  background: url("../images/vk-logo.svg") no-repeat center;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  border-radius: 27px;
+
+}
+
+.slider-social-media-youtube {
+  background: url("../images/youtube-logo.svg") no-repeat center;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  border-radius: 27px;
+
+}
+
+.social-media-link {
+  color: #2D3440;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
 
 .telegram {
   background: url("../images/telegram-logo.svg") no-repeat center;
@@ -235,6 +292,7 @@ li {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  width: 1170px;
 }
 
 .present-title {
@@ -244,12 +302,23 @@ li {
   color: #2D3440;
   width: 434px;
   height: 92px;
+  margin-left: 36px;
 }
 
 .present-text {
   color: #2D3440;
   width: 328px;
   height: 66px;
+  margin-left: 36px;
+}
+
+.want-present {
+  margin-left: 36px;
+}
+
+.present-1-img {
+  margin: 0;
+  padding: 0;
 }
 
 .present-1,
@@ -261,6 +330,7 @@ li {
   border-radius: 16px;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
 
 }
 
@@ -329,6 +399,7 @@ li {
 
 .product-list {
   display: flex;
+  align-content: space-between;
 }
 
 .product-card-title {
@@ -426,7 +497,7 @@ li {
   background-color: aliceblue;
 }
 
-.contacts-right{
+.contacts-right {
   width: 343px;
   height: 364px;
   background: #FCFCFC;
@@ -456,25 +527,27 @@ li {
 
 /*FOOTER*/
 
-.page-footer-container{
+.page-footer-container {
   display: flex;
   width: 1170px;
   margin: 0 auto;
 }
 
-.footer-social-media{
+.footer-social-media-list {
   width: 104px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
+  margin: 0 auto;
   margin-right: 299px;
+  padding: 0;
 }
 
-.footer-info{
+.footer-info {
   width: 356px;
   margin-right: 200px;
 }
 
-.footer-info-list{
+.footer-info-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -493,7 +566,7 @@ li {
   color: #2D3440;
 }
 
-.footer-creator{
+.footer-creator {
   width: 193px;
 }
 
@@ -515,6 +588,15 @@ li {
 
 /*catalog.html*/
 
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 335px;
+  justify-content: space-between;
+}
+
 .breadcrumbs-link {
   color: #2D3440;
   font-weight: 700;
@@ -532,6 +614,37 @@ li {
 
 .catalog-filter {
   color: #2D3440;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 823px;
+  flex-wrap: wrap;
+}
+
+
+.catalog-filter-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.catalog-filter-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.catalog-filter-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .pagination-link {
@@ -547,4 +660,38 @@ li {
   background: #FCFCFC;
   border-radius: 50px;
   text-align: center;
+}
+
+.product-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  margin: 0;
+  padding: 0;
+  width: 270px;
+  height: 332px;
+  background: #FCFCFC;
+  border-radius: 8px;
+}
+
+
+.catalog-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 1170px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 168px;
 }
