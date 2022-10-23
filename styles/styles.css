@@ -41,7 +41,7 @@ body {
 }
 
 li {
-  list-style: none;
+  list-style-type: none
 }
 
 .visually-hidden {
@@ -84,6 +84,7 @@ li {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 422px;
@@ -92,6 +93,7 @@ li {
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 431px;
@@ -129,10 +131,14 @@ li {
 }
 
 .navigation-link {
+  display: block;
   color: #2D3440;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
+  padding: 8px 16px;
+  min-height: 32px;
+  min-width: 16px;
 }
 
 .main-container {
@@ -160,6 +166,7 @@ li {
   width: 470px;
   height: 92px;
   margin-left: 70px;
+  margin-top: 136px;
 }
 
 .slider-title-text {
@@ -185,10 +192,12 @@ li {
   padding: 0;
   width: 1170px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .slider-social-media {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 104px;
@@ -267,8 +276,13 @@ li {
 
 /*PRESENTS*/
 
+.presents{
+  margin: 80px auto;
+}
+
 .call-to-action-present,
 .call-to-action-try {
+
   margin: 0 auto;
   padding: 0;
   font-weight: 900;
@@ -278,6 +292,7 @@ li {
   color: #2D3440;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .call-to-action-present {
@@ -285,6 +300,7 @@ li {
   padding: 0;
   width: 434px;
   height: 92px;
+  margin-bottom: 55px;
 }
 
 .present-item {
@@ -393,13 +409,17 @@ li {
 /*CATALOG-MINI*/
 
 .call-to-action-try {
+  margin: 0 auto;
+  padding: 0;
   width: 527px;
   height: 92px;
+  margin-bottom: 56px;
 }
 
 .product-list {
   display: flex;
   align-content: space-between;
+  flex-wrap: wrap;
 }
 
 .product-card-title {
@@ -536,6 +556,7 @@ li {
 .footer-social-media-list {
   width: 104px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   margin-right: 299px;
