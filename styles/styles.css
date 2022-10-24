@@ -216,7 +216,7 @@ li {
   flex-wrap: wrap;
 }
 
-.slider {
+.slider-icecream {
   border-radius: 50%;
   background: #ffcbd8;
   width: 312px;
@@ -895,7 +895,6 @@ li {
   margin: 0;
   padding: 0;
   width: 270px;
-  height: 332px;
   background: #FCFCFC;
   border-radius: 8px;
   padding-bottom: 24px;
