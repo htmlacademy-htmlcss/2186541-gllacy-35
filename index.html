@@ -26,7 +26,7 @@
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+            <a class="navigation-link-tel" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-search">
             <a class="navigation-link" href="#"></a>
@@ -51,22 +51,28 @@
             </h2>
             <p class="slider-title-text">Натуральное мороженое из свежих сливок
               и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-            <button class="button button-white button-slider">Заказать</button>
+            <button class="button-slider">Заказать</button>
           </div>
-
-          <div class="slider">
-            <h2 class="visually-hidden">Вкусы мороженого</h2>
-
-            <img class="slider-image" src="images/slider-1.png" width="306" height="507" alt="Примеры мороженого.">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее мороженое</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее мороженое</span>
-            </button>
-
+          <div class="slider-container">
+            <div class="slider">
+              <h2 class="visually-hidden">Вкусы мороженого.</h2>
+              <img class="slider-image" src="images/slider-1.png" alt="Примеры мороженого.">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее мороженое</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее мороженое</span>
+              </button>
+            </div>
+            <div class="slider-icecream-2">
+              <img class="slider-image-2" src="images/slider-2.png" alt="Примеры мороженого.">
+            </div>
+            <div class="slider-icecream-3">
+              <img class="slider-image-3" src="images/slider-3.png" alt="Примеры мороженого.">
+            </div>
           </div>
         </section>
+
         <div class="slider-bottom">
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
@@ -107,7 +113,7 @@
                 <h3 class="present-title">Малинка даром!</h3>
                 <p class="present-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
                   малинового варенья бесплатно.</p>
-                <button class="button button-white want-present">Хочу подарок</button>
+                <button class="want-present">Хочу подарок</button>
               </div>
               <img class="present-1-img" src="images/present-1.png" width="219" height="268" alt="Малина в рожке.">
             </li>
@@ -116,7 +122,7 @@
                 <h3 class="present-title">Маршмеллоу даром!</h3>
                 <p class="present-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно
                   бесплатно.</p>
-                <button class="button button-white want-present">Хочу подарок</button>
+                <button class="want-present">Хочу подарок</button>
               </div>
               <img class="present-2-img" src="images/present-2.png" width="219" height="268" alt="Маршмеллоу в рожке.">
             </li>
@@ -127,7 +133,7 @@
         <section class="catalog-mini">
           <h2 class="call-to-action-try">Попробуйте самые популярные вкусы нашего мороженого</h2>
           <ul class="product-list">
-            <li class="product-card">
+            <li class="product-card-mini">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/raspberry.png" width="270" height="184"
                   alt="Малиновое мороженое.">
@@ -139,7 +145,7 @@
 
               </button>
             </li>
-            <li class="product-card">
+            <li class="product-card-mini">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/pistaccio.png" width="270" height="184"
                   alt="Фисташковый пломбир.">
@@ -151,7 +157,7 @@
 
               </button>
             </li>
-            <li class="product-card">
+            <li class="product-card-mini">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/blueberry.png" width="270" height="184"
                   alt="Черничное мороженое.">
@@ -164,7 +170,7 @@
 
               </button>
             </li>
-            <li class="product-card">
+            <li class="product-card-mini">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/bubble-gum.png" width="270" height="184"
                   alt="Бабл-гам мороженое.">
@@ -249,7 +255,7 @@
                 <label class="form-label" for="order-adress">Адрес</label>
                 <input type="text" id="order-adress" name="order-adress" placeholder="ул. Большая Конюшенная, 19/8">
               </div>
-              <button class="button button-pink" type="submit">Отправить</button>
+              <button class="button-sent" type="submit">Отправить</button>
             </div>
           </form>
         </section>
