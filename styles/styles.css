@@ -194,8 +194,8 @@ li {
   margin-left: 70px;
   width: 139px;
   background: #FCFCFC;
-  border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  border: none;
   border-radius: 26px;
   line-height: 20px;
   color: #2D3440;
@@ -250,9 +250,9 @@ li {
 }
 
 .slider-image-2 {
-  width: 66px;
+  width: 91px;
   height: 150px;
-  margin: -25px 17px;
+  margin: -25px 3px;
 
 }
 
@@ -266,9 +266,9 @@ li {
 }
 
 .slider-image-3 {
-  width: 66px;
+  width: 80px;
   height: 150px;
-  margin: -25px 17px;
+  margin: -25px 7px;
 }
 
 .slider-button {
@@ -418,29 +418,41 @@ li {
   color: #2D3440;
   margin-left: 36px;
   margin-top: 28px;
+  margin-bottom: 0;
 }
 
 .want-present {
   margin-left: 36px;
   background: #FCFCFC;
-  border: 4px solid rgba(252, 252, 252, 0.4);
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   padding: 12px 32px;
   margin-top: 28px;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  border: none;
+  line-height: 20px;
+  color: #2D3440;
+  font-weight: 700;
 }
 
-.present-1-img {
+
+
+.present-1 {
+  display: flex;
+  background-color: #FF7799;
+  background-image: url("../images/present-1.png") no-repeat;
+  width: 570px;
+  border-radius: 16px;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
+
 }
 
-.present-1,
 .present-2 {
   display: flex;
   background-color: #FF7799;
+  background-image: url("../images/present-2.png") no-repeat;
   width: 570px;
-  height: 268px;
   border-radius: 16px;
   margin: 0;
   padding: 0;
@@ -450,12 +462,14 @@ li {
 
 /*ABOUT*/
 
+
 .about {
   background: #FFFFFF;
   border-radius: 16px;
   margin: 0;
   padding: 56px 40px;
   margin-bottom: 80px;
+
 }
 
 .call-to-action {
@@ -575,6 +589,7 @@ li {
   width: 270px;
   height: 332px;
   background: #FCFCFC;
+  background-position: -51px;
   border-radius: 8px;
   padding-bottom: 24px;
 }
@@ -601,9 +616,10 @@ li {
   background: url("../images/cart.svg") no-repeat center;
   width: 32px;
   height: 32px;
-  background-position: center;
   border-radius: 26px;
   background-color: #FF2F64;
+  color: white;
+  border: none;
 }
 
 .product-card-price {
