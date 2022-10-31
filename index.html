@@ -226,15 +226,16 @@
           </article>
           <article class="email">
             <div class="email-div">
-            <p class="news-text-body">Подпишитесь на нашу сладкую рассылку и будьте всегда
-              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
-              Честно =)</p>
-            <h3 class="visually-hidden">Подпишитесь на нашу рассылку</h3>
-            <form class="email-form" action="#" method="post">
-              <input type="email" placeholder="email@example.com">
-              <button class="button button-email" type="submit">Отправить</button>
-            </form>
-          </div>
+              <p class="news-text-body">Подпишитесь на нашу сладкую рассылку и будьте всегда
+                в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
+                ерунды.
+                Честно =)</p>
+              <h3 class="visually-hidden">Подпишитесь на нашу рассылку</h3>
+              <form class="email-form" action="#" method="post">
+                <input class="email-input" type="email" placeholder="email@example.com">
+                <button class="button button-email" type="submit">Отправить</button>
+              </form>
+            </div>
           </article>
         </section>
 
@@ -246,24 +247,31 @@
               доставку мороженого на
               дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
-          <form class="order-form" action="#" method="post">
-            <p class="order-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-            <div class="order-form-container">
-              <div class="order-form-date">
-                <label class="form-label" for="order-date">Дата</label>
+          <div class="order-form-container">
+            <p class="order-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+            </p>
+            <form class="order-form" action="#" method="post">
+              <p class="field-group order-form-date">
+                <label class="form-label" for="order-date">Дата
+                  <button class="info">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+                </label>
                 <input type="text" id="order-date" name="order-date" placeholder="01.04.2020">
-              </div>
-              <div class="order-form-phone">
+              </p>
+              <p class="field-group order-form-phone">
                 <label class="form-label" for="order-phone">Телефон</label>
                 <input type="text" id="order-phone" name="order-phone" placeholder="+7 800 999-00-00">
-              </div>
-              <div class="order-form-adress">
-                <label class="form-label" for="order-adress">Адрес</label>
+              </p>
+              <p class="field-group order-form-adress">
+                <label class="form-label" for="order-adress">Адрес
+                  <button class="info">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+                </label>
                 <input type="text" id="order-adress" name="order-adress" placeholder="ул. Большая Конюшенная, 19/8">
-              </div>
+              </p>
               <button class="button-sent" type="submit">Отправить</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </section>
 
         <section class="contacts">

@@ -578,6 +578,10 @@ li {
   margin: 0;
 }
 
+.email-input{
+  width: 332px;
+}
+
 .button-email{
   width: 152px;
   background: #FF2F64;
@@ -594,6 +598,7 @@ li {
 .news-text-body {
   width: 506px;
   padding: 0;
+  margin:0;
   margin-bottom: 42px;
 }
 
@@ -638,8 +643,6 @@ li {
   width: 270px;
   height: 332px;
   background: #FCFCFC;
-  background-size: 70%;
-  background-position: bottom;
   border-radius: 8px;
   padding-bottom: 24px;
 }
@@ -723,7 +726,7 @@ li {
   color: #2D3440;
   margin: 0;
   padding: 0;
-
+margin-top: 103px;
 }
 
 .order-text {
@@ -731,39 +734,61 @@ li {
   padding: 0;
   width: 371px;
   margin-top: 24px;
+  margin-bottom: 99px;
 }
 
-.order-form {
-  width: 500px;
+.order-form-container {
   background: #FCFCFC;
   border-radius: 8px;
   padding: 40px;
 }
 
-.order-form-container {
+.field-group{
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+}
+.order-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+  align-items: start;
 }
 
 .order-form-date {
-  width: 117px;
-  margin-right: 16px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
 }
 
 .order-form-phone {
-  width: 287px;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .order-form-adress {
   min-width: 420px;
+  grid-column: 1 / -1;
 }
 
 .order-form-text {
   margin: 0;
   padding: 0;
-  padding-right: 80px;
   margin-bottom: 32px;
+  width: 380px;
+}
+
+.button-sent{
+  width: 152px;
+  background: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  border: none;
+  border-radius: 26px;
+  line-height: 20px;
+  color: #FCFCFC;
+  font-weight: 700;
+  padding: 12px 32px;
+  grid-column-start: 2;
 }
 
 /*Адрес и контакты*/
@@ -876,6 +901,7 @@ li {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 335px;
@@ -949,22 +975,21 @@ li {
 }
 
 .product-list {
-  display: flex;
-  margin: 0;
+display: grid;
+grid-template-columns: 270px 270px 270px 270px;
+gap: 40px 30px;
+margin: 0;
   padding: 0;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 44px;
+  margin-bottom: 16px;
 }
 
 .product-card {
   margin: 0;
   padding: 0;
-  width: 270px;
   background: #FCFCFC;
   border-radius: 8px;
   padding-bottom: 24px;
-  margin-bottom: 40px;
 }
 
 .catalog-bottom {
