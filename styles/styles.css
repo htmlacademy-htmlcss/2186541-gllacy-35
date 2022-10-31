@@ -79,7 +79,7 @@ li {
 .navigation-item-catalog {
   background: url("../images/arrow-down.svg") no-repeat;
   background-position: 95px 10px;
-  flex-grow:1;
+  flex-grow: 1;
 }
 
 .navigation {
@@ -110,7 +110,7 @@ li {
 }
 
 
-.navigation-tel{
+.navigation-tel {
   line-height: 20px;
   color: #2D3440;
   padding: 6px;
@@ -152,7 +152,7 @@ li {
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-padding: 0;
+  padding: 0;
 }
 
 
@@ -464,7 +464,7 @@ padding: 0;
 .present-1 {
   display: flex;
   background: url("../images/present-1.png") no-repeat;
-  background-size:35%;
+  background-size: 35%;
   background-position: 360px 20px;
   background-color: #FF7799;
   width: 570px;
@@ -478,7 +478,7 @@ padding: 0;
 .present-2 {
   display: flex;
   background: url("../images/present-2.png") no-repeat;
-  background-size:auto;
+  background-size: auto;
   background-position: right;
   background-color: #FF7799;
   width: 570px;
@@ -494,11 +494,17 @@ padding: 0;
 
 .about {
   background: #FFFFFF;
+  background-image: url("../images/waffle.jpg");
   border-radius: 16px;
   margin: 0;
-  padding: 56px 40px;
+  padding: 24px;
   margin-bottom: 80px;
+}
 
+.about-div {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 56px 0;
 }
 
 .call-to-action {
@@ -514,22 +520,16 @@ padding: 0;
 .about-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   margin-top: 56px;
   align-items: center;
+  gap: 40px 32px;
 }
 
 .about-card {
   display: flex;
-  width: 505px;
-  height: 66px;
+  width: 504px;
   justify-content: center;
-  padding-bottom: 40px;
-
-}
-
-.about-card:nth-child(3n),
-.about-card:nth-child(4n) {
-  padding-bottom: 0;
 }
 
 .about-card-text {
@@ -559,25 +559,42 @@ padding: 0;
 }
 
 .email {
-  background: url("../images/post.jpg") no-repeat;
   background-color: #FFFFFF;
+  background: url("../images/post.jpg") no-repeat;
   border-radius: 16px;
   width: 570px;
-  height: 224px;
+  padding: 6px;
   background-size: cover;
+}
+
+.email-div {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 26px;
 }
 
 .email-form {
   padding: 0;
-  margin: 26px;
+  margin: 0;
+}
+
+.button-email{
+  width: 152px;
+  background: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  border: none;
+  border-radius: 26px;
+  line-height: 20px;
+  color: #FCFCFC;
+  font-weight: 700;
+  padding: 12px 32px;
+  margin-left: 18px;
 }
 
 .news-text-body {
   width: 506px;
-  height: 66px;
   padding: 0;
-  margin: 26px;
-
+  margin-bottom: 42px;
 }
 
 .news-text {
