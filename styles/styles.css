@@ -578,11 +578,11 @@ li {
   margin: 0;
 }
 
-.email-input{
+.email-input {
   width: 332px;
 }
 
-.button-email{
+.button-email {
   width: 152px;
   background: #FF2F64;
   outline: 4px solid rgba(255, 47, 100, 0.3);
@@ -598,7 +598,7 @@ li {
 .news-text-body {
   width: 506px;
   padding: 0;
-  margin:0;
+  margin: 0;
   margin-bottom: 42px;
 }
 
@@ -722,7 +722,7 @@ li {
   color: #2D3440;
   margin: 0;
   padding: 0;
-margin-top: 103px;
+  margin-top: 103px;
 }
 
 .order-text {
@@ -739,11 +739,12 @@ margin-top: 103px;
   padding: 40px;
 }
 
-.field-group{
+.field-group {
   margin: 0;
   display: flex;
   flex-direction: column;
 }
+
 .order-form {
   display: grid;
   grid-template-columns: 117px 287px;
@@ -774,7 +775,7 @@ margin-top: 103px;
   width: 380px;
 }
 
-.button-sent{
+.button-sent {
   width: 152px;
   background: #FF2F64;
   outline: 4px solid rgba(255, 47, 100, 0.3);
@@ -971,10 +972,10 @@ margin-top: 103px;
 }
 
 .product-list {
-display: grid;
-grid-template-columns: 270px 270px 270px 270px;
-gap: 40px 30px;
-margin: 0;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  gap: 40px 30px;
+  margin: 0;
   padding: 0;
   margin-top: 44px;
   margin-bottom: 16px;
@@ -990,7 +991,7 @@ margin: 0;
   flex-direction: column;
 }
 
-.price-and-button{
+.price-and-button {
   display: flex;
   justify-content: space-between;
   padding-left: 40px;
@@ -999,7 +1000,7 @@ margin: 0;
   margin-top: auto;
 }
 
-.product-card-description{
+.product-card-description {
   text-decoration: none;
   color: #565C66;
   text-align: center;
