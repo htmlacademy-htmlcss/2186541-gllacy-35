@@ -14,7 +14,14 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item navigation-item-catalog">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <a class="navigation-link " href="catalog.html">
+              <svg class="navigation-item-catalog-icon" width="16" height="17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z"
+                  fill="#2D3440" />
+              </svg>
+              Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -29,13 +36,33 @@
             <a class="navigation-link-tel" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-search">
-            <a class="navigation-link-user" href="#"></a>
+            <a class="navigation-link-user" href="#">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.66 6.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
+                  fill="#2D3440" />
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li class="navigation-login">
-            <a class="navigation-link-user" href="#">Вход</a>
+            <a class="navigation-link-user navigation-link-login" href="#">
+              <svg class="navigation-icon" width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
+                  fill="#2D3440" />
+              </svg>
+              Вход</a>
           </li>
           <li class="navigation-cart">
-            <a class="navigation-link-user" href="#">2 товара</a>
+            <a class="navigation-link-user navigation-link-cart" href="#">
+              <svg class="navigation-icon" width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                  fill="#2D3440" />
+              </svg>
+              2 товара</a>
           </li>
         </ul>
       </nav>
@@ -56,19 +83,31 @@
           <div class="slider-container">
             <div class="slider-icecream">
               <h2 class="visually-hidden">Вкусы мороженого.</h2>
-              <img class="slider-image" src="images/slider-1.png" alt="Примеры мороженого.">
-              <button class="slider-button slider-prev" type="button">
-                <span class="visually-hidden">Предыдущее мороженое</span>
-              </button>
-              <button class="slider-button slider-next" type="button">
-                <span class="visually-hidden">Следующее мороженое</span>
-              </button>
+              <img class="slider-image" src="images/slider-1.png" alt="Вкусное большое мороженое.">
+              <div class="slider-buttons">
+                <button class="slider-button slider-prev" type="button">
+                  <svg class="slider-prev-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.86 13.14a.66.66 0 0 0 .95-.95L5.6 8l4.2-4.2a.67.67 0 0 0-.95-.94L4.2 7.52a.66.66 0 0 0 0 .94l4.66 4.68Z"
+                      fill="#FCFCFC" />
+                  </svg>
+                  <span class="visually-hidden">Предыдущее мороженое</span>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <svg class="slider-next-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
+                      fill="#FCFCFC" />
+                  </svg>
+                  <span class="visually-hidden">Следующее мороженое</span>
+                </button>
+              </div>
             </div>
             <div class="slider-icecream-2">
-              <img class="slider-image-2" src="images/slider-2.png" alt="Примеры мороженого.">
+              <img class="slider-image-2" src="images/slider-2.png" alt="Вкусное мороженое поменьше.">
             </div>
             <div class="slider-icecream-3">
-              <img class="slider-image-3" src="images/slider-3.png" alt="Примеры мороженого.">
+              <img class="slider-image-3" src="images/slider-3.png" alt="Вкусное мороженое поменьше.">
             </div>
           </div>
         </section>
@@ -141,6 +180,10 @@
               <div class="price-and-button">
                 <b class="product-card-price">310 ₽/кг</b>
                 <button class="catalog-mini-button" type="button">
+                  <svg class="catalog-mini-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                  </svg>
                 </button>
               </div>
             </li>
@@ -154,6 +197,10 @@
               <div class="price-and-button">
                 <b class="product-card-price">340 ₽/кг</b>
                 <button class="catalog-mini-button" type="button">
+                  <svg class="catalog-mini-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                  </svg>
                 </button>
               </div>
             </li>
@@ -168,7 +215,10 @@
               <div class="price-and-button">
                 <b class="product-card-price">330 ₽/кг</b>
                 <button class="catalog-mini-button" type="button">
-
+                  <svg class="catalog-mini-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                  </svg>
                 </button>
               </div>
             </li>
@@ -183,7 +233,10 @@
               <div class="price-and-button">
                 <b class="product-card-price">320 ₽/кг</b>
                 <button class="catalog-mini-button" type="button">
-
+                  <svg class="catalog-mini-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
+                  </svg>
                 </button>
               </div>
             </li>
