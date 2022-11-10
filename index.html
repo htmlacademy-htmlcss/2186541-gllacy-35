@@ -13,15 +13,32 @@
         alt="Логотип магазина мороженого Gllacy shop.">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item navigation-item-catalog">
-            <a class="navigation-link " href="catalog.html">
-              <svg class="navigation-item-catalog-icon" width="16" height="17" fill="none"
+          <li class="navigation-item navigation-item-catalog ">
+            <a class="navigation-link" href="catalog.html">
+              <svg class="navigation-item-catalog-icon" width="16" height="16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z"
-                  fill="#2D3440" />
+                  fill="CurrentColor" />
               </svg>
-              Каталог.</a>
+              Каталог</a>
+              <div class="popover popover-subcatalog">
+                <h2 class="subcatalog-title">Новинки</h2>
+                <ul class="subcatalog-list">
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -41,10 +58,23 @@
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M1.66 6.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
-                  fill="#2D3440" />
+                  fill="CurrentColor" />
               </svg>
               <span class="visually-hidden">Поиск.</span>
             </a>
+            <div class="popover popover-search">
+              <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="what-search">Поиск мороженого.</label>
+                <input class="search-field" id="what-search" type="text" placeholder="Поиск по сайту" name="search" autofocus>
+                <button class="search-reset-button" type="reset">
+                  <span class="visually-hidden">Стереть.</span>
+                </button>
+                <button class="visually-hidden" type="submit">
+                  <span>Искать.
+                  </span>
+                </button>
+              </form>
+            </div>
           </li>
           <li class="navigation-login">
             <a class="navigation-link-user navigation-link-login" href="#">
@@ -55,6 +85,30 @@
                   fill="#2D3440" />
               </svg>
               Вход</a>
+              <div class="popover popover-login">
+                <h2 class="popover-title">Личный кабинет</h2>
+                <form class="popover-login-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <div class="popover-form-input-block">
+                    <label class="visually-hidden" for="login-input">Логин.</label>
+                    <input class="order-field popover-input" id="login-input" type="email"
+                           placeholder="email@example.com" name="login" required>
+                    <label class="visually-hidden" for="password-input">Пароль.</label>
+                    <input class="order-field popover-input" id="password-input" type="password"
+                           placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" name="password" required>
+                  </div>
+                  <div class="popover-form-button-block">
+                    <button class="popover-login-button button-fuksia" type="submit">Войти</button>
+                    <ul class="popover-login-links">
+                      <li class="popover-login-items">
+                        <a class="popover-login-link" href="#">Забыли пароль?</a>
+                      </li>
+                      <li class="popover-login-items">
+                        <a class="popover-login-link" href="#">Регистрация</a>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
           </li>
           <li class="navigation-cart">
             <a class="navigation-link-user navigation-link-cart" href="#">
@@ -65,6 +119,48 @@
                   fill="#2D3440" />
               </svg>
               2 товара</a>
+              <div class="popover popover-cart-full">
+                <div class="popover-cart-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="cart-product-list">
+                    <li class="cart-product">
+                      <a class="cart-product-link" href="#">
+                        <img class="cart-product-image" src="images/raspberry.png" width="46" height="46" alt="Малиновое мороженое.">
+                        <div class="cart-product-text">
+                          <p class="cart-product-title">Малинка</p>
+                          <p class="cart-product-add-information">1 кг х 310 ₽</p>
+                        </div>
+                      </a>
+                      <p class="cart-product-price">310 ₽</p>
+                      <button class="cross-button" type="button">
+                        <span class="visually-hidden">Удалить.</span>
+                      </button>
+                    </li>
+                    <li class="cart-product">
+                      <a class="cart-product-link" href="#">
+                        <img class="cart-product-image" src="images/bubble-gum.png" width="46" height="46" alt="Мороженое бабл гам.">
+                        <div class="cart-product-text">
+                          <p class="cart-product-title">Бабл-гам</p>
+                          <p class="cart-product-add-information">1,5 кг х 320 ₽</p>
+                        </div>
+                      </a>
+                      <p class="cart-product-price">480 ₽</p>
+                      <button class="cross-button" type="button">
+                        <span class="visually-hidden">Удалить.</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cart-footer">
+                  <a class="popover-cart-button button-fuksia">Оформить заказ</a>
+                  <span class="cart-total-cost">Итого: 790 ₽</span>
+                </div>
+              </div>
+
+              <div class="popover popover-cart-empty">
+                <h2 class="popover-title visually-hidden">Корзина.</h2>
+                <p>Ваша корзина пока пуста</p>
+              </div>
           </li>
         </ul>
       </nav>
@@ -464,6 +560,29 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-connect">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section>
+          <h3 class="modal-title">Мы обязательно ответим вам!</h3>
+          <form class="modal-connect-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="connect-form-name">Имя и фамилия.</label>
+            <input class="input-modal-name" id="connect-form-name" type="text" placeholder="Имя и фамилия" name="user-name" required>
+
+            <label class="visually-hidden" for="connect-form-email">Электронная почта.</label>
+            <input class="input-modal-email" id="connect-form-email" type="email" placeholder="email@example.com" name="user-email" required>
+
+            <label class="visually-hidden" for="connect-form-textarea">Ваше сообщение нам.</label>
+
+            <textarea class="modal-textarea" id="connect-form-textarea" placeholder="В свободной форме" name="letter" required></textarea>
+            <button class="modal-button button-fuksia" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 
