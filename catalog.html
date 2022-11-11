@@ -97,7 +97,7 @@
 
           <div class="catalog-filter-group">
             <p class="catalog-filter-title">Сортировка:</p>
-            <select class="select-control field-wrapper-select">
+            <select class="select-control field-wrapper-select" aria-label="Сортировка" >
               <option value="popular">по популярности</option>
               <option value="cheap">по цене</option>
             </select>
@@ -109,7 +109,7 @@
               <span class="catalog-filter-title-price">Цена:</span>
               <div class="range-wrapper-inputs">
                 <label class="range-text">
-                  <input class="range-input" type="number" value="100" name="min-price">₽ —
+                  <input class="range-input" type="number" value="100" name="min-price">₽ -
                 </label>
                 <label class="range-text">
                   <input class="range-input" type="number" value="500" name="max-price">₽
@@ -132,7 +132,7 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность:</legend>
-            <ul class="filters-background field-wrapper">
+            <ul class="field-wrapper">
               <li>
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="fat" id="0%">
@@ -167,7 +167,7 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители:</legend>
-            <div class="filters-background">
+            <div class="field-wrapper">
               <label class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="choko" checked>
                 <span class="control-mark">
@@ -439,7 +439,7 @@
               <img class="product-card-image" src="images/crema.png" width="270" height="184"
                 alt="Мороженое крем-брюле.">
               <h3 class="product-card-title">Крем-брюле</h3>
-              <p class="product-card-description">Классическое крем-брюле </p>
+              <p class="product-card-description">Классическое<br>крем-брюле </p>
             </a>
             <div class="price-and-button">
               <b class="product-card-price">280 ₽/кг</b>

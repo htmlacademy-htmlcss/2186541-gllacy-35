@@ -1465,8 +1465,7 @@ li {
   width: 193px;
   margin: 0;
   padding: 0;
-
-  padding-left: 15px;
+  padding-left: 18px;
 }
 
 .footer-creator-name {
@@ -1553,7 +1552,7 @@ li {
   padding: 0;
   flex-wrap: wrap;
   margin-top: 40px;
-  gap: 20px 24px;
+  gap: 16px 24px;
   margin-bottom: 31px;
 
   font-family: inherit;
@@ -1562,19 +1561,10 @@ li {
   line-height: 20px;
 }
 
-.filters-background {
-  background-color: rgba(252, 252, 252, 0.3);
-  border: none;
-  border-radius: 20px;
-  display: flex;
-  margin: 0;
-  padding: 8px 24px;
-}
 
 /*Сортировка*/
 
 .select {
-  position: relative;
   display: flex;
   align-items: center;
   width: 196px;
@@ -1589,8 +1579,14 @@ li {
   background-color: rgba(252, 252, 252, 0.3);
   border: none;
   border-radius: 20px;
-  background-image: url("../images/arrow-down.svg") no-repeat;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat:no-repeat;
   background-position: right 12px center;
+}
+
+.select-control{
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .select-control:hover {
@@ -1613,13 +1609,6 @@ li {
 }
 
 
-.control {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  position: relative;
-  padding-left: 24px;
-}
 
 .catalog-filter-group {
   display: flex;
@@ -1631,7 +1620,6 @@ li {
 
 .catalog-filter-title {
   margin: 0 auto 6px 16px;
-
   word-break: break-word;
 }
 
@@ -1645,7 +1633,6 @@ li {
 .range-input {
   width: 30px;
   padding: 0 2px;
-
   font: inherit;
   text-align: center;
   color: inherit;
@@ -1656,28 +1643,27 @@ li {
 
 .field-wrapper {
   padding: 10px 16px;
-
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
+  margin: 0;
+  display: flex;
+  border: none;
+  justify-content: end;
 }
 
 .range-scale {
   position: relative;
-
   display: block;
   height: 2px;
   width: 164px;
   margin: 7px 0;
-
   background-color: rgba(86, 92, 102, 0.3);
   border-radius: 2px;
 }
 
 .range-bar {
   position: absolute;
-
   height: 2px;
-
   border-radius: 2px;
   background-color: #565c66;
 }
@@ -1707,28 +1693,23 @@ li {
 .range-toggle {
   position: absolute;
   top: 50%;
-
   display: block;
   height: 16px;
   width: 16px;
   padding: 0;
-
   background-color: #fcfcfc;
   border: 6px solid #2d3440;
   border-radius: 50%;
-
   cursor: pointer;
 }
 
 .toggle-min {
   left: 0;
-
   transform: translate(-50%, -50%);
 }
 
 .toggle-max {
   right: 0;
-
   transform: translate(50%, -50%);
 }
 
@@ -1757,6 +1738,14 @@ li {
 }
 
 /*Жирность*/
+.control {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  position: relative;
+  padding-left: 30px;
+}
+
 .control:hover .control-mark {
   border-color: #FCFCFC;
 }
@@ -1798,12 +1787,12 @@ li {
   height: 16px;
   border: 2px solid #2D3440;
   border-radius: 50%;
-  left: 0;
+  left: 7px;
   top: 2px;
 }
 
 .control-label {
-  margin-right: 16px;
+  margin-right: 11px;
 }
 
 .checked-svg {
@@ -1844,7 +1833,7 @@ li {
 
 /*Кнопка фильтра*/
 .button-filter {
-  padding: 8px 52px;
+  padding: 8px 54px;
   background: rgba(252, 252, 252, 0.3);
   border: none;
   outline: 2px solid #FCFCFC;
@@ -1854,6 +1843,7 @@ li {
   box-shadow: none;
   height: 36px;
   align-self: flex-end;
+  margin-left: -7px;
 }
 
 /*Пагинация*/
@@ -1961,6 +1951,7 @@ li {
   margin: 0;
   padding: 0;
   width: 1170px;
+  margin-bottom: 45px;
 }
 
 
