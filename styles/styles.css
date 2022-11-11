@@ -2245,8 +2245,6 @@ li {
 }
 
 .cart-product-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 160px;
   margin: 0;
