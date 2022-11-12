@@ -2099,7 +2099,7 @@ li {
   border-radius: 50px;
 }
 
-.pagination-item:current {
+.current-page {
   background: #FCFCFC;
   border-radius: 50%;
   text-align: center;
@@ -2204,7 +2204,7 @@ li {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -8px;
   margin: auto;
 }
 
@@ -2215,7 +2215,7 @@ li {
 .pagination-next-icon {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -8px;
   bottom: 0;
   left: 0;
   margin: auto;
