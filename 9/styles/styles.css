@@ -1756,7 +1756,7 @@ li {
 
 .select-control:focus {
   background-color: rgba(252, 252, 252, 0.4);
-  border: 2px solid #FCFCFC;
+  outline: 2px solid #FCFCFC;
   outline: none;
 }
 
@@ -1950,8 +1950,8 @@ li {
   background-color: #2D3440;
   border: none;
   border-radius: 50%;
-  top: 3px;
-  left: 3px;
+  top: auto;
+  left: auto;
   content: "";
 }
 
@@ -1961,6 +1961,18 @@ li {
 
 .control-input[type="radio"]:checked:disabled + .control-mark::after {
   background-color: rgba(36, 36, 36, 0.4);
+}
+
+.control-input[type="radio"]:checked:focus + .control-mark::after {
+  background-color: #FCFCFC;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  border-color: #FCFCFC;
+}
+
+.control-input[type="radio"]:focus{
+  border-color: #FCFCFC;
 }
 
 
@@ -2002,6 +2014,11 @@ li {
   border: 1.5px solid #2D3440;
 }
 
+.control-input[type="checkbox"]:focus + .control-mark {
+  border-radius: 2px;
+  border: 1.5px solid #FCFCFC;
+}
+
 .control-input[type="checkbox"]:disabled + .control-mark {
   border-color: rgba(36, 36, 36, 0.5);
 }
@@ -2019,6 +2036,10 @@ li {
 }
 
 .control-input[type="checkbox"]:checked:hover + .control-mark .checked-svg {
+  fill: #FCFCFC;
+}
+
+.control-input[type="checkbox"]:checked:focus + .control-mark .checked-svg {
   fill: #FCFCFC;
 }
 
