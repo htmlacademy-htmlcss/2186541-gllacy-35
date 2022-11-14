@@ -832,13 +832,13 @@ li {
   outline: 2px solid rgba(252, 252, 252, 0.5);
 }
 
-.social-link:focus-visible {
+.social-link:focus {
   outline: 2px solid #2D3440;
 }
 
 .social-link:hover::before,
 .social-link:active::before,
-.social-link:focus-visible {
+.social-link:focus::before {
   content: "";
   width: 20px;
   height: 20px;
