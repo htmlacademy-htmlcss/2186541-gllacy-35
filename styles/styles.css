@@ -2317,10 +2317,10 @@ li {
   display: block;
 }
 
-.navigation-item-catalog:focus .popover-subcatalog,
-.navigation-search:focus .popover-search,
-.navigation-login:focus .popover-login,
-.navigation-link-cart:focus .popover-cart-full {
+.navigation-link-catalog:focus +.popover-subcatalog,
+.navigation-link-search:focus +.popover-search,
+.navigation-link-login:focus +.popover-login,
+.navigation-link-cart:focus +.popover-cart-full {
   display: block;
 }
 
