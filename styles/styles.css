@@ -945,7 +945,6 @@ li {
   background-repeat: no-repeat;
   background-size: 35%;
   background-position: 355px 25px;
-  background-color: #FF7799;
   width: 570px;
   border-radius: 16px;
   margin: 0;
@@ -964,7 +963,6 @@ li {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
-  background-color: #FF7799;
   width: 570px;
   border-radius: 16px;
   margin: 0;
@@ -1038,7 +1036,8 @@ li {
 
 .news {
   background-color: aliceblue;
-  background: url("../images/news.jpg") no-repeat;
+  background-image: url("../images/news.jpg");
+  background-repeat:no-repeat;
   background-position: 12% 50%;
   background-size: 115% auto;
   width: 570px;
@@ -1047,7 +1046,8 @@ li {
 
 .email {
   background-color: #FFFFFF;
-  background: url("../images/post.jpg") no-repeat;
+  background-image: url("../images/post.jpg");
+  background-repeat:no-repeat;
   border-radius: 16px;
   width: 560px;
   padding: 6px;
