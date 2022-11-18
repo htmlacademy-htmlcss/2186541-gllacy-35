@@ -974,7 +974,8 @@ li {
 
 /*ABOUT*/
 .about {
-  background: url("../images/waffle_1.jpg");
+  background-color: #FFFFFF;
+  background-image: url("../images/waffle_1.jpg");
   background-repeat: repeat;
   border-radius: 16px;
   margin: 0;
