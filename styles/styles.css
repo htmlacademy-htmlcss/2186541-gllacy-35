@@ -941,10 +941,10 @@ li {
   display: -ms-flexbox;
   display: flex;
   background-color: #FF7799;
-  background: url("../images/present-1.png") no-repeat;
+  background-image: url("../images/present-1.png");
+  background-repeat: no-repeat;
   background-size: 35%;
   background-position: 355px 25px;
-  background-color: #FF7799;
   width: 570px;
   border-radius: 16px;
   margin: 0;
@@ -959,10 +959,10 @@ li {
   display: -ms-flexbox;
   display: flex;
   background-color: #FF7799;
-  background: url("../images/present-2.png") no-repeat;
+  background-image: url("../images/present-2.png");
+  background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
-  background-color: #FF7799;
   width: 570px;
   border-radius: 16px;
   margin: 0;
@@ -974,7 +974,9 @@ li {
 
 /*ABOUT*/
 .about {
-  background: url("../images/waffle_1.jpg") repeat;
+  background-color: #FFFFFF;
+  background-image: url("../images/waffle_1.jpg");
+  background-repeat: repeat;
   border-radius: 16px;
   margin: 0;
   padding: 24px;
@@ -1035,7 +1037,8 @@ li {
 
 .news {
   background-color: aliceblue;
-  background: url("../images/news.jpg") no-repeat;
+  background-image: url("../images/news.jpg");
+  background-repeat:no-repeat;
   background-position: 12% 50%;
   background-size: 115% auto;
   width: 570px;
@@ -1044,7 +1047,8 @@ li {
 
 .email {
   background-color: #FFFFFF;
-  background: url("../images/post.jpg") no-repeat;
+  background-image: url("../images/post.jpg");
+  background-repeat:no-repeat;
   border-radius: 16px;
   width: 560px;
   padding: 6px;
@@ -1241,7 +1245,9 @@ li {
   -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #fcfcfc;
-  background: url("../images/order.jpg") no-repeat center;
+  background-image: url("../images/order.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 64px;
   border-radius: 16px;
 }
@@ -1434,11 +1440,12 @@ li {
 
 /*Адрес и контакты*/
 .contacts {
-  background: url("../images/contacts.jpg") no-repeat;
+  background-color: aliceblue;
+  background-image: url("../images/contacts.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 0;
   border-radius: 16px;
-  background-color: aliceblue;
   padding: 64px;
   margin-top: 80px;
 }
@@ -2321,6 +2328,23 @@ li {
 .navigation-link-search:focus +.popover-search,
 .navigation-link-login:focus +.popover-login,
 .navigation-link-cart:focus +.popover-cart-full {
+  display: block;
+}
+
+.navigation-item-catalog:focus-within .popover-subcatalog,
+.navigation-search:focus-within .popover-search,
+.navigation-login:focus-within .popover-login,
+.navigation-cart:focus-within .popover-cart-full {
+  display: block;
+}
+
+.popover::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
   display: block;
 }
 
